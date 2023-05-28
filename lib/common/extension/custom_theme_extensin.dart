@@ -14,6 +14,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     bludColor: Coloors.blueLight,
     LangBtnBgColor: Colors.white,
     LangBtnHighlightColor: Color(0xFFE8E8ED),
+    authAppBarTextColor: Coloors.greenLight,
   );
 
   static CustomThemeExtension darkMdoe = CustomThemeExtension(
@@ -22,12 +23,14 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     bludColor: Coloors.blueDark,
     LangBtnBgColor: Color(0xFF182229),
     LangBtnHighlightColor: Color(0xFF09141A),
+    authAppBarTextColor: Color(0xFFE9EDEF),
   );
   final Color? circleImageColor;
   final Color? greyColor;
   final Color? bludColor;
   final Color? LangBtnBgColor;
   final Color? LangBtnHighlightColor;
+  final Color? authAppBarTextColor;
 
   CustomThemeExtension({
     this.circleImageColor,
@@ -35,6 +38,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     this.bludColor,
     this.LangBtnBgColor,
     this.LangBtnHighlightColor,
+    this.authAppBarTextColor,
   });
   @override
   ThemeExtension<CustomThemeExtension> copyWith({
@@ -49,6 +53,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       greyColor: greyColor ?? this.greyColor,
       bludColor: bludColor ?? this.bludColor,
       LangBtnBgColor: LangBtnBgColor ?? this.LangBtnBgColor,
+      authAppBarTextColor: authAppBarTextColor ?? this.authAppBarTextColor,
       LangBtnHighlightColor:
           LangBtnHighlightColor ?? this.LangBtnHighlightColor,
     );
@@ -63,6 +68,8 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       greyColor: Color.lerp(greyColor, other.greyColor, t),
       bludColor: Color.lerp(bludColor, other.bludColor, t),
       LangBtnBgColor: Color.lerp(LangBtnBgColor, other.LangBtnBgColor, t),
+      authAppBarTextColor:
+          Color.lerp(authAppBarTextColor, other.authAppBarTextColor, t),
       LangBtnHighlightColor:
           Color.lerp(LangBtnHighlightColor, other.LangBtnHighlightColor, t),
     );
