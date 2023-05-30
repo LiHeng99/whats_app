@@ -11,11 +11,17 @@ class _MessagePageState extends State<MessagePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Message'),
-      ),
-      body: const Center(
-        child: Text('Message Page'),
+      // appBar: AppBar(
+      //   title: const Text('Message'),
+      // ),
+      body: Container(
+        child: ListView.builder(
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text('User $index'),
+            );
+          },
+        ),
       ),
     );
   }
