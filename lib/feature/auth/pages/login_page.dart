@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp/common/extension/custom_theme_extensin.dart';
@@ -27,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
       favorite: ['+86', 'CN'],
       countryListTheme: CountryListThemeData(
         bottomSheetHeight: 600,
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Theme.of(context).colorScheme.background,
         flagSize: 22,
         borderRadius: BorderRadius.circular(20),
         textStyle: TextStyle(
