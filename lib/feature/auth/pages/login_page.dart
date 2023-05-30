@@ -3,6 +3,7 @@ import 'package:whatsapp/common/extension/custom_theme_extensin.dart';
 import 'package:whatsapp/common/utils/coloors.dart';
 import 'package:whatsapp/common/wedgets/custom_elevated_button.dart';
 import 'package:whatsapp/feature/auth/wedgets/custom_text_firld.dart';
+import 'package:whatsapp/feature/welcome/pages/welcome_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -134,7 +135,14 @@ class _LoginPageState extends State<LoginPage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: CustomElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return WelcomePage();
+            }),
+          );
+        },
         text: 'NEXT',
         buttonWidget: 90,
       ),

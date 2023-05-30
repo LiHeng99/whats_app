@@ -16,24 +16,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // return Container(
-    //   padding: EdgeInsets.fromLTRB(0, paddings.top, 0, paddings.bottom),
-    //   child: Column(
-    //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //     children: [
-    //       MaterialApp(
-    //         debugShowCheckedModeBanner: false,
-    //         title: "WhatsApp Me",
-    //         theme: lightTheme(),
-    //         darkTheme: darkTheme(),
-    //         themeMode: ThemeMode.system,
-    //         home: WelcomePage(),
-    //       ),
-    //     ],
-    //   ),
-    // );
-    // resizeToAvoidBottomInset: false,
-
     // return MaterialApp(
     //   debugShowCheckedModeBanner: false,
     //   title: "WhatsApp Me",
