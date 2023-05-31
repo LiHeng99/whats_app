@@ -13,7 +13,25 @@ class _ContactsPageState extends State<ContactsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Contacts Page')),
+      body: Container(
+        child: ListView.builder(
+          itemBuilder: (context, index) {
+            return ListBody(
+              children: [
+                ListTile(
+                  leading: CircleAvatar(
+                    child: Placeholder(),
+                  ),
+                  title: Text('Contact $index'),
+                ),
+                Divider(
+                  height: 0,
+                ),
+              ],
+            );
+          },
+        ),
+      ),
     );
   }
 }

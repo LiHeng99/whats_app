@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/feature/message/pages/single_chat_page.dart';
+import 'package:whatsapp/feature/message/widgets/message_card.dart';
 
 class MessagePage extends StatefulWidget {
   const MessagePage({super.key});
@@ -11,14 +13,28 @@ class _MessagePageState extends State<MessagePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('Message'),
-      // ),
       body: Container(
         child: ListView.builder(
           itemBuilder: (context, index) {
-            return ListTile(
-              title: Text('User $index'),
+            return ListBody(
+              children: <Widget>[
+                ListBody(
+                  children: <Widget>[
+                    MessageCardWidget(
+                      index: index,
+                      chatType: 'single',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) {
+                            return SingleChatPage();
+                          }),
+                        );
+                      },
+                    ),
+                  ],
+                )
+              ],
             );
           },
         ),

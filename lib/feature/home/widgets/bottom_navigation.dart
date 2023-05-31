@@ -13,25 +13,19 @@ class BottomNavigation extends StatefulWidget {
 
 class _BottomNavigationState extends State<BottomNavigation> {
   int _currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      currentIndex: _currentIndex,
+      type: BottomNavigationBarType.fixed,
       backgroundColor: context.theme.homeAppBarBgColor,
-      selectedItemColor: context.theme.homeAppBarTextColor,
+      selectedItemColor: Coloors.greenDark,
       unselectedItemColor: context.theme.homeAppBarTextColor,
       items: [
         BottomNavigationBarItem(
-          icon: Icon(
-            Icons.chat,
-            color: context.theme.homeAppBarTextColor,
-          ),
-          backgroundColor: context.theme.homeAppBarBgColor,
-          label: Text(
-            'Chats',
-            style: TextStyle(
-              color: Colors.black,
-            ),
-          ).data,
+          icon: Icon(Icons.chat),
+          label: 'Chats',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.contacts),
@@ -46,15 +40,15 @@ class _BottomNavigationState extends State<BottomNavigation> {
           label: 'Settings',
         ),
       ],
-      selectedIconTheme: IconThemeData(
-        color: Coloors.greenDark,
-      ),
       onTap: (index) {
         setState(() {
           _currentIndex = index;
         });
         widget.onTabSelected(index);
       },
+      selectedIconTheme: IconThemeData(
+        color: Coloors.greenDark,
+      ),
     );
   }
 }
