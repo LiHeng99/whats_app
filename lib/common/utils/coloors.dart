@@ -16,4 +16,8 @@ class Coloors {
   static const Color backgroudLight = Color(0xFFFFFFFF);
 
   static const Color greyBcakground = Color(0xFF202C33);
+
+  static const Color black = Color(0xFF000000);
+  static const Color white = Color(0xFFFFFFFF);
+  // static const Color redAccent = Color(0xFFE0245E);
 }
