@@ -5,6 +5,7 @@ import 'package:whatsapp/common/theme/light_theme.dart';
 import 'package:whatsapp/feature/auth/pages/login_page.dart';
 import 'package:whatsapp/feature/home/pages/home_page.dart';
 import 'package:whatsapp/feature/welcome/pages/welcome_page.dart';
+import 'package:flutter/cupertino.dart';
 
 //flutter build apk --split-per-abi
 void main() {
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
       systemNavigationBarColor: Colors.transparent,
     ));
     return MaterialApp(
+      // return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "WhatsApp Me",
       theme: lightTheme(),
