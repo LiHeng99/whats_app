@@ -27,7 +27,9 @@ class _MessagePageState extends State<MessagePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) {
-                            return SingleChatPage();
+                            return SingleChatPage(
+                              userNameAppBarText: 'User ${index}',
+                            );
                           }),
                         );
                       },
