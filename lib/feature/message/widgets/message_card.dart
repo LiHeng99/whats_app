@@ -20,8 +20,10 @@ class _MessageCardWidgetState extends State<MessageCardWidget> {
       child: ListTile(
         onTap: widget.onTap,
         leading: CircleAvatar(
-          child: Placeholder(),
-        ),
+            child: Image(
+          image: NetworkImage(
+              "https://p.qqan.com/up/2023-5/16848026007788969.jpg"),
+        )),
         title: Padding(
           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 0),
           child: Column(

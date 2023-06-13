@@ -15,6 +15,8 @@ class _MessagePageState extends State<MessagePage> {
     return Scaffold(
       body: Container(
         child: ListView.builder(
+          //循环十次
+          itemCount: 1,
           itemBuilder: (context, index) {
             return ListBody(
               children: <Widget>[

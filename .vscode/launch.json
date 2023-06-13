@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Flutter (23043RP34C)",
+            "program": "lib/main.dart",
+            "deviceId": "1c1060a7",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}

@@ -24,20 +24,20 @@ class _BottomNavigationState extends State<BottomNavigation> {
       unselectedItemColor: context.theme.homeAppBarTextColor,
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.chat),
-          label: 'Chats',
+          icon: Icon(Icons.chat_bubble),
+          label: '微信',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.contacts),
-          label: 'Contacts',
+          label: '通讯录',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.public),
-          label: 'Contacts',
+          icon: Icon(Icons.explore),
+          label: '发现',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.settings),
-          label: 'Settings',
+          icon: Icon(Icons.perm_identity),
+          label: '我',
         ),
       ],
       onTap: (index) {
